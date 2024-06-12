@@ -57,4 +57,3 @@ def exit(request):
     pass
 
 
-"kekeke"
