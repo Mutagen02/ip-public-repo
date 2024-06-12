@@ -56,5 +56,3 @@ def deleteFavourite(request):
 def exit(request):
     pass
 
-
-"luna"
