@@ -12,7 +12,7 @@ def index_page(request):
 
 # auxiliar: retorna 2 listados -> uno de las imágenes de la API y otro de los favoritos del usuario.
 def getAllImagesAndFavouriteList(request):
-    images = [nene]
+    images = []
     favourite_list = []
 
     return images, favourite_list
@@ -55,3 +55,6 @@ def deleteFavourite(request):
 @login_required
 def exit(request):
     pass
+
+
+"kekeke"
