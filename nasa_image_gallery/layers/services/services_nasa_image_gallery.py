@@ -10,7 +10,7 @@ def getAllImages(request):
     # ¡OJO! el parámetro 'input' indica si se debe buscar por un valor introducido en el buscador.
     json_collection = []
     images = []
-    json_collection.append(getAllImages(request))
+    json_collection.append(transport.getAllImages(input=None))
     for element in json_collection:
         element1=fromRequestIntoNASACard(element)
         images.append(element1)
