@@ -32,7 +32,7 @@ def search(request):
 
     # si el usuario no ingresó texto alguno, debe refrescar la página; caso contrario, debe filtrar aquellas imágenes que posean el texto de búsqueda.
     busqueda= services_nasa_image_gallery.getImagesBySearchInputLike(input)
-    if busqueda == ""
+    if busqueda == "":
         pass
 
 
