@@ -12,7 +12,7 @@ def index_page(request):
 
 # auxiliar: retorna 2 listados -> uno de las imágenes de la API y otro de los favoritos del usuario.
 def getAllImagesAndFavouriteList(request):
-    images = 
+    images = getAllImages(input=none)
     favourite_list = getAllFavouritesByUser(request) 
 
     return images, favourite_list
