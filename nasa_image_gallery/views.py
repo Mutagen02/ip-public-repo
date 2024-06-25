@@ -31,7 +31,9 @@ def search(request):
     search_msg = request.POST.get('query', '')
 
     # si el usuario no ingresó texto alguno, debe refrescar la página; caso contrario, debe filtrar aquellas imágenes que posean el texto de búsqueda.
-    pass
+    busqueda= services_nasa_image_gallery.getImagesBySearchInputLike(input)
+    if busqueda == ""
+        pass
 
 
 # las siguientes funciones se utilizan para implementar la sección de favoritos: traer los favoritos de un usuario, guardarlos, eliminarlos y desloguearse de la app.
