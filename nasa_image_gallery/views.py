@@ -64,7 +64,7 @@ def search(request):
         images = services_nasa_image_gallery.getAllImages(input=search_msg)  
     else:  
         # Si no anoto ninguna palabra clave .vuelve a todas las imagenes  
-        images = services_nasa_image_gallery.getAllImages()  
+        images = services_nasa_image_gallery.getAllImages(request)  
 
     # Convierte cada imagen a un formato que tu template pueda entender
     #images = [fromRequestIntoNASACard(api_image) for api_image in images]
