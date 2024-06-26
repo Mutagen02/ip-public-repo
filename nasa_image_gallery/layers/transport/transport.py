@@ -10,7 +10,7 @@ def getAllImages(input=None):
     else:
         json_response = requests.get(config.NASA_REST_API + input).json()
 
-    json_collection = []
+    str(json_collection) = []
     for object in json_response['collection']['items']:
         try:
             if 'links' in object:  # verificar si la clave 'links' está presente en el objeto (sin 'links' NO nos sirve, ya que no mostrará las imágenes).
