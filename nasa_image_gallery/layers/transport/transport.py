@@ -6,9 +6,9 @@ from ...config import config
 # comunicación con la REST API de la NASA.
 def getAllImages(input=None):
     if input is None:
-        json_response = str(requests.get(config.NASA_REST_API_DEFAULT_SEARCH).json())
+        json_response = requests.get(config.NASA_REST_API_DEFAULT_SEARCH).json()
     else:
-        json_response = str(requests.get(config.NASA_REST_API + input).json())
+        json_response = requests.get(config.NASA_REST_API + input).json()
 
     json_collection = []
     for object in json_response['collection']['items']:
