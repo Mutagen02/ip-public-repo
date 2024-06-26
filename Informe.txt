@@ -1,0 +1,3 @@
+En primer lugar se completaron las funciones primordiales como mostrar las imágenes de inicio al clickear en el link, la barra de búsqueda funciona bien, los resultados se muestran correctamente. Sin embargo, el login no se pudo implementar del todo, lo cual impide que se pueda iniciar sesión como corresponde.
+Otra función extra faltantes es el agregado de artículos a favoritos.
+Para completar las funciones se utilizaron otras implementadas en otros archivos como mapper, transport, nasa vard, entre otras.

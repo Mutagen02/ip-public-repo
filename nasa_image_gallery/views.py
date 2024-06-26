@@ -15,19 +15,7 @@ def login_page(request):
 
 
 # auxiliar: retorna 2 listados -> uno de las imágenes de la API y otro de los favoritos del usuario.
-def getAllImagesAndFavouriteList(request):
-   
-   
-   favourite_list = []
 
-    # con el mapper transformamos el json en una estructura que el html pueda leer
-   images = []  
-   for api_image in services_nasa_image_gallery.getAllImages:  
-        image = fromRequestIntoNASACard(api_image)  
-        images.append(image)  
-   
-
-   return images, favourite_list   
 
    
 
